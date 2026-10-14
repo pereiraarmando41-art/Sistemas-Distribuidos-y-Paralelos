@@ -9,7 +9,6 @@ Solución paralela e híbrida (memoria distribuida + memoria compartida) para re
 
 Desarrollado para la asignatura **Sistemas Distribuidos y Paralelos** de la Facultad de Informática / Facultad de Ingeniería de la **Universidad Nacional de La Plata (UNLP)**.
 
----
 
 ## 📌 Aspectos Destacados de la Solución
 
@@ -20,7 +19,6 @@ Desarrollado para la asignatura **Sistemas Distribuidos y Paralelos** de la Facu
 - **Reducción del Espacio de Búsqueda:** Implementación del algoritmo tipo *Takaken* con podado temprano por simetrías.
 - **Balance de Carga Dinámico:** Estrategia Productor-Consumidor por bloques de trabajo (*chunks*) para evitar inactividad de hilos.
 
----
 
 ## 📂 Estructura del Repositorio
 
@@ -30,7 +28,6 @@ Desarrollado para la asignatura **Sistemas Distribuidos y Paralelos** de la Facu
 - `Makefile`: Script para automatización de la compilación.
 - `.gitignore`: Filtro de binarios y temporales.
 
----
 
 ## ⚙️ Compilación y Ejecución
 
@@ -66,6 +63,7 @@ make clean
 ./nreinas_secuencial 16
 ```
 
+
 #### 2. Versión Híbrida (MPI + Pthreads)
 ```bash
 mpirun -np <num_procesos_mpi> ./nreinas_paralelo <tamaño_tablero> <hilos_por_proceso>
@@ -76,7 +74,6 @@ mpirun -np <num_procesos_mpi> ./nreinas_paralelo <tamaño_tablero> <hilos_por_pr
 mpirun -np 2 ./nreinas_paralelo 16 4
 ```
 
----
 
 ## 📊 Informe
 
@@ -87,7 +84,6 @@ El archivo InformeGrupo5.pdf documenta:
  - Cálculo de speedup, eficiencia y overhead
  - Conclusiones y comparativa de soluciones
 
----
 
 ## 👥 Integrantes
 
