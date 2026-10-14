@@ -40,7 +40,12 @@ Sistemas-Distribuidos-y-Paralelos/
 ├── Makefile                      # Automatización de compilación
 ├── .gitignore                    # Filtros de archivos ejecutables/temporales
 └── README.md                     # Documentación general
-⚙️ Compilación y Ejecución
+
+---
+
+## ⚙️ Compilación y Ejecución
+
+
 Requisitos Previos
 Compilador de C (gcc)
 
