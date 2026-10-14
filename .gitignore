@@ -1,0 +1,18 @@
+---
+
+#### 3. `.gitignore`
+```gitignore
+# Executables
+nreinas_paralelo
+nreinas_secuencial
+*.o
+*.out
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+
+# Logs and outputs
+*.log
+slurm-*.out

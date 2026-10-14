@@ -1,0 +1,19 @@
+CC = mpicc
+CFLAGS = -O3 -Wall
+LIBS = -lpthread
+
+TARGET = nreinas_paralelo
+SRC = src/mpi_source.c src/pthreads_source.c
+SEQ_TARGET = nreinas_secuencial
+SEQ_SRC = src/nreinas_secuencial.c
+
+all: $(TARGET) $(SEQ_TARGET)
+
+$(TARGET): $(SRC)
+	$(CC) $(CFLAGS) -o $(TARGET) $(SRC) $(LIBS)
+
+$(SEQ_TARGET): $(SEQ_SRC)
+	gcc $(CFLAGS) -o $(SEQ_TARGET) $(SEQ_SRC)
+
+clean:
+	rm -f $(TARGET) $(SEQ_TARGET) *.o
