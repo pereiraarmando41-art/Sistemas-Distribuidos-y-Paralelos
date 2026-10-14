@@ -78,6 +78,17 @@ mpirun -np 2 ./nreinas_paralelo 16 4
 
 ---
 
+## 📊 Informe
+
+El archivo InformeGrupo5.pdf documenta:
+
+ - Estrategia de paralelización
+ - Análisis de escalabilidad
+ - Cálculo de speedup, eficiencia y overhead
+ - Conclusiones y comparativa de soluciones
+
+---
+
 ## 👥 Integrantes
 
 - **Del Blanco, Javier Alberto**
